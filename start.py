@@ -215,10 +215,10 @@ def main():
         return
     print()
 
-    # 等待 Vite 完成首次編譯後再開瀏覽器
     time.sleep(2)
-    url = f"http://localhost:{FRONTEND_PORT}"
-    webbrowser.open(url)
+    # url = f"http://localhost:{FRONTEND_PORT}"
+    # webbrowser.open(url)
+    subprocess.Popen(["npx", "electron", "."], cwd=FRONTEND, shell=True)
 
     print("  ╔══════════════════════════════════════════╗")
     print("  ║          LocWarp 已就緒！                ║")
