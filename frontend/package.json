@@ -79,5 +79,8 @@
       "uninstallerSidebar": "build/uninstallerSidebar.bmp",
       "include": "build/installer.nsh"
     }
+  },
+  "allowScripts": {
+    "electron-winstaller@5.4.0": true
   }
 }
